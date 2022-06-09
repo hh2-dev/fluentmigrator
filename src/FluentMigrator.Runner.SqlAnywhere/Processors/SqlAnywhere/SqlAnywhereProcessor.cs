@@ -287,7 +287,7 @@ namespace FluentMigrator.Runner.Processors.SqlAnywhere
 
                 using (var source = new TextReaderSource(new StringReader(sql), true))
                 {
-                    parser.Process(source, stripComments: true);
+                    parser.Process(source, stripComments: false);
                 }
 
                 if (!string.IsNullOrEmpty(sqlBatch))

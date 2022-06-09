@@ -225,7 +225,7 @@ namespace FluentMigrator.Runner.Processors.SqlServer
 
                 using (var source = new TextReaderSource(new StringReader(sql), true))
                 {
-                    parser.Process(source, stripComments: true);
+                    parser.Process(source, stripComments: false);
                 }
             }
             catch (Exception ex)
